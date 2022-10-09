@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Uber
+         {
+            constructor(km)
+             {
+                this.km = km,
+            this.price_perkm = 10
+                    
+             }
+            
+            getprice()
+            {
+                var totalprice=  this.price_perkm * this.km
+                //return(totalprice);
+                
+                var discount=(25/totalprice)*100
+                var disprice=totalprice-discount
+                console.log("price after discount cupon of 25% is:",disprice)
+            } 
+            
+        }
+          var p1=new Uber(15);
+        p1.getprice();
+    </script>
+</body>
+
+</html>
